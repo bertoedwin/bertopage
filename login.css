@@ -1,0 +1,108 @@
+body {
+    font-family:sans-serif;
+    background-image: url("download.jpg");
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e90ff;
+  }
+  
+  .txt_field {
+    position: relative;
+    margin: 50px 0;
+  }
+  
+  input[type="text"] {
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+  }
+  
+  .txt_field span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s ease;
+  }
+  
+  .txt_field input[type="text"]:focus ~ span::before {
+    width: 100%;
+  }
+  
+  .txt_field label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 16px;
+    color: #adadad;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  
+  .txt_field input[type="text"]:valid ~ label,
+  .txt_field input[type="text"]:focus ~ label {
+    top: -5px;
+    font-size: 12px;
+    color: #1e90ff;
+  }
+  
+  .pass {
+    text-align: right;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #007fff;
+  }
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.signup_link {
+    text-align: center;
+}
